@@ -1,7 +1,19 @@
-public class code5 {
+ class Animal {
+    Animal(){
+        System.out.println("hello");
+    }
+    
+}
+class Dog extends Animal{
+    Dog(){
+    super();}
+    void Sound(){
+        System.out.println("hi");
+    }
+}
+class code5{
     public static void main(String[] args) {
-        double r=50;
-        double area=3.14*r*r;
-        System.out.println("area of circle:"+area);
+        Dog dg=new Dog();
+        dg.Sound();
     }
 }

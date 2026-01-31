@@ -1,10 +1,19 @@
-public class code7 {
-    public static void main(String[] args) {
-        int a=50;
-        int b=150;
-        String result;
-        result=(a>b)? "true":"false";
-        System.out.println("a is greater than b:"+result);
+abstract class Shape {
+    abstract void draw();
+    void message(){
+        System.out.println("hello");
     }
     
+}
+class Circle extends Shape{
+    void draw(){
+        System.out.println("drawing");
+    }
+}
+class code7{
+    public static void main(String[] args) {
+        Circle cl=new Circle();
+        cl.draw();
+        cl.message();
+    }
 }
